@@ -5,13 +5,14 @@ import DashboardView from "@/views/DashboardView";
 import CalendarView from "@/views/CalendarView";
 import CommunityView from "@/views/CommunityView";
 import SettingsView from "@/views/SettingsView";
+import SigninView from "@/views/SigninView";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Landing",
+    name: "LandingView",
     component: LandingView
   },
   {
@@ -33,6 +34,11 @@ const routes = [
     path: "/settings/",
     name: "SettingsView",
     component: SettingsView
+  },
+  {
+    path: "/signin/",
+    name: "SigninView",
+    component: SigninView
   }
 ];
 
