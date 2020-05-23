@@ -1,6 +1,6 @@
 <template>
   <v-content class="d-flex align-center unselectable">
-    <v-container class="mt-12">
+    <v-container class="mb-12">
       <MainLogo />
       <SigninButton />
       <RegisterButton />
