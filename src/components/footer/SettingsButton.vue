@@ -1,6 +1,11 @@
 <template>
   <v-col class="d-flex justify-center pa-0">
-    <div id="settings-button" :class="{ mounted: isMounted }" role="button" @click="showPage" />
+    <div
+      id="settings-button"
+      :class="{ mounted: isMounted }"
+      role="button"
+      @click="showPage"
+    />
   </v-col>
 </template>
 
