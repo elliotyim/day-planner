@@ -1,23 +1,29 @@
 <template>
-  <v-footer class="pa-0" fixed>
+  <v-footer class="unselectable pa-0" fixed>
     <v-container class="py-0">
       <v-row>
-        <v-col class="d-flex justify-center px-0">
-          <img src="@/assets/img/account-outline.svg" width="48px" />
-        </v-col>
-        <v-col class="d-flex justify-center px-0">
-          <img src="@/assets/img/calendar-blank-outline.svg" width="48px" />
-        </v-col>
-        <v-col class="d-flex justify-center px-0">
-          <img src="@/assets/img/dots-horizontal.svg" width="48px" />
-        </v-col>
+        <DashboardButton />
+        <CalendarButton />
+        <CommunityButton />
+        <SettingsButton />
       </v-row>
     </v-container>
   </v-footer>
 </template>
 
 <script>
+import DashboardButton from "@/components/footer/DashboardButton";
+import CalendarButton from "@/components/footer/CalendarButton";
+import CommunityButton from "@/components/footer/CommunityButton";
+import SettingsButton from "@/components/footer/SettingsButton";
+
 export default {
-  name: "FooterComponent"
+  name: "FooterComponent",
+  components: {
+    DashboardButton,
+    CalendarButton,
+    CommunityButton,
+    SettingsButton
+  }
 };
 </script>
