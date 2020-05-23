@@ -1,7 +1,7 @@
 <template>
-  <v-row class="d-flex">
+  <v-row>
     <v-col align="center" class="px-12">
-      <v-btn class="d-flex" color="white" :to="'login'" outlined>
+      <v-btn color="white" class="d-flex" min-width="100%" outlined>
         Login
       </v-btn>
     </v-col>
