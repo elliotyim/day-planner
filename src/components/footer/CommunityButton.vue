@@ -1,6 +1,6 @@
 <template>
   <v-col class="d-flex justify-center pa-0">
-    <div id="community-button" role="button" @click="go" />
+    <div id="community-button" role="button" @click="showPage" />
   </v-col>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: "CommunityButton",
   methods: {
-    go() {
+    showPage() {
       this.$router.push("/community/");
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <v-col class="d-flex justify-center pa-0">
-    <div id="settings-button" role="button" @click="go" />
+    <div id="settings-button" role="button" @click="showPage" />
   </v-col>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: "SettingsButton",
   methods: {
-    go() {
+    showPage() {
       this.$router.push("/settings/");
     }
   }
