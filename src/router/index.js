@@ -6,6 +6,8 @@ import CalendarView from "@/views/CalendarView";
 import CommunityView from "@/views/CommunityView";
 import SettingsView from "@/views/SettingsView";
 import SigninView from "@/views/SigninView";
+import SignupView from "@/views/SignupView";
+import PasswordResetView from "@/views/PasswordResetView";
 
 Vue.use(VueRouter);
 
@@ -39,6 +41,16 @@ const routes = [
     path: "/signin/",
     name: "SigninView",
     component: SigninView
+  },
+  {
+    path: "/register/",
+    name: "SignupView",
+    component: SignupView
+  },
+  {
+    path: "/password-reset/",
+    name: "PasswordResetView",
+    component: PasswordResetView
   }
 ];
 
