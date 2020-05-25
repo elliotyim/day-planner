@@ -28,11 +28,13 @@
                 >
               </div>
               <div id="col" class="mx-5">
-                <v-btn class="mt-5 mb-1 mr-2" color="#DB4437" block dark
-                  >Log in with Google</v-btn
+                <v-btn class="mt-5 mb-1 mr-2" color="#DB4437" block dark>
+                  <v-icon dark left>mdi-google</v-icon> Log in with
+                  Google</v-btn
                 >
-                <v-btn class="mt-1 mb-5 mr-2" color="black" block dark
-                  >Log in with Github</v-btn
+                <v-btn class="mt-1 mb-5 mr-2" color="#211F1F" block dark
+                  ><v-icon dark left>mdi-github</v-icon> Log in with
+                  Github</v-btn
                 >
               </div>
               <div id="col" class="mx-5">
@@ -43,7 +45,7 @@
                     >
                   </v-col>
                   <v-col class="text-right">
-                    <v-btn link to="/forgot-password/" text color="#739F90"
+                    <v-btn link to="/password-reset/" text color="#739F90"
                       >Forgot Password?</v-btn
                     >
                   </v-col>
