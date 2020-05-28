@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="unselectable pa-0" fixed>
+  <v-footer class="unselectable pa-0" app fixed>
     <v-container class="py-0">
       <v-row>
         <DashboardButton />
