@@ -29,13 +29,11 @@
               </div>
               <div id="col" class="mx-5">
                 <v-btn class="mt-5 mb-1 mr-2" color="#DB4437" block dark>
-                  <v-icon dark left>mdi-google</v-icon> Log in with
-                  Google</v-btn
-                >
-                <v-btn class="mt-1 mb-5 mr-2" color="#211F1F" block dark
-                  ><v-icon dark left>mdi-github</v-icon> Log in with
-                  Github</v-btn
-                >
+                  <v-icon dark left>mdi-google</v-icon>Log in with Google
+                </v-btn>
+                <v-btn class="mt-1 mb-5 mr-2" color="#211F1F" block dark>
+                  <v-icon dark left>mdi-github</v-icon>Log in with Github
+                </v-btn>
               </div>
               <div id="col" class="mx-5">
                 <v-row>
