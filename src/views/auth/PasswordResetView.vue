@@ -1,6 +1,6 @@
 <template>
   <CardBackground>
-    <CardTitle title="Reset Password" options="pa-5" />
+    <CardTitle title="Reset Password" options="mx-5 py-3" />
 
     <CardContent options="mx-5">
       <p><strong>Insert email address you registered.</strong></p>

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "CardTextFieldTemplate",
+  name: "CardTextField",
   props: {
     options: String,
     type: String,

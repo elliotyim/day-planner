@@ -1,6 +1,6 @@
 <template>
   <CardBackground>
-    <CardTitle title="Sign Up" options="pa-5" />
+    <CardTitle title="Sign Up" options="mx-5 py-3" />
 
     <CardTextField type="text" label="Name" color="#739F90" options="mx-5" />
     <CardTextField type="email" label="Email" color="#739F90" options="mx-5" />

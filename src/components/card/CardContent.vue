@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "CardTitleTemplate",
+  name: "CardContent",
   props: {
     options: String
   }

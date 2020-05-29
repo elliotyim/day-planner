@@ -1,5 +1,5 @@
 <template>
-  <v-content class="d-flex unselectable">
+  <v-content class="align-center unselectable">
     <v-container>
       <v-row>
         <v-col>

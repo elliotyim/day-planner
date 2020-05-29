@@ -1,6 +1,6 @@
 <template>
   <CardBackground>
-    <CardTitle :title="title" options="mx-5 py-5" />
+    <CardTitle :title="title" options="mx-5 py-3" />
 
     <CardContent options="mx-5">
       <p>
@@ -28,6 +28,12 @@ import CardButton from "@/components/card/CardButton";
 
 export default {
   name: "ResultView",
+  components: {
+    CardBackground,
+    CardTitle,
+    CardContent,
+    CardButton
+  },
   props: {
     state: String
   },
@@ -49,14 +55,6 @@ export default {
         "The requested URL was not found on this server."
       );
     }
-  },
-  components: {
-    CardBackground,
-    CardTitle,
-    CardContent,
-    CardButton
   }
 };
 </script>
-
-<style></style>
