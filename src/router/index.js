@@ -15,7 +15,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/d",
+    path: "/debug/",
     name: "DebugView",
     component: DebugView
   },

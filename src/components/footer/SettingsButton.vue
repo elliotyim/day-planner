@@ -14,12 +14,12 @@ export default {
   name: "SettingsButton",
   computed: {
     isMounted() {
-      return this.$route.path.includes("/settings/");
+      return this.$route.path.includes("/debug/");
     }
   },
   methods: {
     showPage() {
-      this.$router.push("/settings/");
+      this.$router.push("/debug/");
     }
   }
 };
