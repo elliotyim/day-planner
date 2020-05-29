@@ -20,14 +20,14 @@ export default {
   components: {
     vue100vh,
     FooterComponent
+  },
+  mounted() {
+    document.documentElement.style.overflow = "hidden";
   }
 };
 </script>
 
 <style>
-body {
-  overflow: hidden;
-}
 .unselectable {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

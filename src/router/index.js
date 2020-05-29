@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import DebugView from "@/views/DebugView";
 import LandingView from "@/views/LandingView";
 import DashboardView from "@/views/main/DashboardView";
 import CalendarView from "@/views/main/CalendarView";
@@ -13,6 +14,11 @@ import ResultView from "@/views/auth/ResultView";
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/d",
+    name: "DebugView",
+    component: DebugView
+  },
   {
     path: "/",
     name: "LandingView",
