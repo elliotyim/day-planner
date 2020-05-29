@@ -1,8 +1,8 @@
 <template>
-  <v-content class="d-flex align-center unselectable">
-    <v-container class="mt-12">
+  <v-content class="align-center unselectable">
+    <v-container>
       <MainLogo />
-      <LoginButton />
+      <SigninButton />
       <RegisterButton />
     </v-container>
   </v-content>
@@ -10,14 +10,14 @@
 
 <script>
 import MainLogo from "@/components/landing/MainLogo";
-import LoginButton from "@/components/landing/LoginButton";
+import SigninButton from "@/components/landing/SigninButton";
 import RegisterButton from "@/components/landing/RegisterButton";
 
 export default {
-  name: "Landing",
+  name: "LandingView",
   components: {
     MainLogo,
-    LoginButton,
+    SigninButton,
     RegisterButton
   }
 };

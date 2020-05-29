@@ -1,17 +1,21 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import LandingView from "@/views/LandingView";
-import DashboardView from "@/views/DashboardView";
-import CalendarView from "@/views/CalendarView";
-import CommunityView from "@/views/CommunityView";
-import SettingsView from "@/views/SettingsView";
+import DashboardView from "@/views/main/DashboardView";
+import CalendarView from "@/views/main/CalendarView";
+import CommunityView from "@/views/main/CommunityView";
+import SettingsView from "@/views/main/SettingsView";
+import SigninView from "@/views/auth/SigninView";
+import SignupView from "@/views/auth/SignupView";
+import PasswordResetView from "@/views/auth/PasswordResetView";
+import ResultView from "@/views/auth/ResultView";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Landing",
+    name: "LandingView",
     component: LandingView
   },
   {
@@ -33,6 +37,27 @@ const routes = [
     path: "/settings/",
     name: "SettingsView",
     component: SettingsView
+  },
+  {
+    path: "/signin/",
+    name: "SigninView",
+    component: SigninView
+  },
+  {
+    path: "/register/",
+    name: "SignupView",
+    component: SignupView
+  },
+  {
+    path: "/password-reset/",
+    name: "PasswordResetView",
+    component: PasswordResetView
+  },
+  {
+    path: "/result/:page",
+    name: "ResultView",
+    component: ResultView,
+    props: true
   }
 ];
 

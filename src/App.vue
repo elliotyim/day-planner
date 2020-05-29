@@ -1,22 +1,33 @@
 <template>
-  <v-app id="day-planner">
-    <router-view id="app-body" />
-    <FooterComponent />
-  </v-app>
+  <vue100vh>
+    <v-app id="day-planner">
+      <vue100vh
+        :css="{ display: 'flex', flexDirection: 'column', height: '100rvh' }"
+      >
+        <router-view />
+        <footer-component />
+      </vue100vh>
+    </v-app>
+  </vue100vh>
 </template>
 
 <script>
+import vue100vh from "vue-100vh";
 import FooterComponent from "@/components/footer/FooterComponent";
 
 export default {
   name: "App",
   components: {
+    vue100vh,
     FooterComponent
   }
 };
 </script>
 
 <style>
+body {
+  overflow: hidden;
+}
 .unselectable {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -33,5 +44,6 @@ export default {
   background-image: url("assets/img/bg.jpg");
   background-position: center;
   background-size: cover;
+  background-color: white;
 }
 </style>
