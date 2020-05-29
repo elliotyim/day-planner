@@ -13,7 +13,7 @@
       options="mx-5 py-5"
       color="#739F90"
       link
-      to="/result/password-reset-email/"
+      to="/result/password-reset/"
       outlined
       block
     />

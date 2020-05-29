@@ -34,26 +34,41 @@ export default {
     CardContent,
     CardButton
   },
+  data() {
+    return {
+      messages: [
+        {
+          title: "Registration Success!",
+          content: "Registration completed successfully!"
+        },
+        {
+          title: "Email Sent!",
+          content: `We've sent a reset password to your registered email.
+          Please check the email.`
+        },
+        {
+          title: "Bad Access!",
+          content: "The requested URL was not found on this server."
+        }
+      ]
+    };
+  },
   props: {
-    state: String
+    page: String
   },
   methods: {
-    print(...messages) {
-      if (this.state === "registration-success") return messages[0];
-      else if (this.state === "password-reset-email") return messages[1];
+    print(messages) {
+      if (this.page === "registration-success") return messages[0];
+      else if (this.page === "password-reset") return messages[1];
       else return messages[2];
     }
   },
   computed: {
     title() {
-      return this.print("Success!", "Email sent!", "Bad Access!");
+      return this.print(this.messages.map(m => m.title));
     },
     message() {
-      return this.print(
-        "Registration completed successfully!",
-        "We've sent a reset password to your registered email. Please check the email.",
-        "The requested URL was not found on this server."
-      );
+      return this.print(this.messages.map(m => m.content));
     }
   }
 };

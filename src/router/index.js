@@ -54,7 +54,7 @@ const routes = [
     component: PasswordResetView
   },
   {
-    path: "/result/:state",
+    path: "/result/:page",
     name: "ResultView",
     component: ResultView,
     props: true
