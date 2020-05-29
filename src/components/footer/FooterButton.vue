@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     iconUrl() {
-      if (this.$route.path.includes(this.path))
+      if (this.$route.path.startsWith(this.path))
         return `url(${require(`@/assets/icon/${this.iconName}-selected.svg`)})`;
       else
         return `url(${require(`@/assets/icon/${this.iconName}-unselected.svg`)})`;
