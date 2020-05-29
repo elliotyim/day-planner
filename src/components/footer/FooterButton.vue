@@ -18,10 +18,13 @@ export default {
   },
   computed: {
     iconUrl() {
-      if (this.$route.path.startsWith(this.path))
+      if (this.isMounted)
         return `url(${require(`@/assets/icon/${this.iconName}-selected.svg`)})`;
       else
         return `url(${require(`@/assets/icon/${this.iconName}-unselected.svg`)})`;
+    },
+    isMounted() {
+      return this.$route.path.startsWith(this.path);
     }
   },
   methods: {
