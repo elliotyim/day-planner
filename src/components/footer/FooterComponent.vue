@@ -2,28 +2,22 @@
   <v-footer class="unselectable pa-0" app>
     <v-container class="py-0">
       <v-row>
-        <DashboardButton />
-        <CalendarButton />
-        <CommunityButton />
-        <SettingsButton />
+        <FooterButton path="/dashboard/" iconName="dashboard" />
+        <FooterButton path="/calendar/" iconName="calendar" />
+        <FooterButton path="/community/" iconName="community" />
+        <FooterButton path="/debug/" iconName="settings" />
       </v-row>
     </v-container>
   </v-footer>
 </template>
 
 <script>
-import DashboardButton from "@/components/footer/DashboardButton";
-import CalendarButton from "@/components/footer/CalendarButton";
-import CommunityButton from "@/components/footer/CommunityButton";
-import SettingsButton from "@/components/footer/SettingsButton";
+import FooterButton from "@/components/footer/FooterButton";
 
 export default {
   name: "FooterComponent",
   components: {
-    DashboardButton,
-    CalendarButton,
-    CommunityButton,
-    SettingsButton
+    FooterButton
   }
 };
 </script>
