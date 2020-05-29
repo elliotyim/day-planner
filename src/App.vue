@@ -1,13 +1,14 @@
 <template>
-  <v-app>
-    <vue100vh
-      id="day-planner"
-      :css="{ display: 'flex', flexDirection: 'column', height: '100rvh' }"
-    >
-      <router-view />
-      <footer-component />
-    </vue100vh>
-  </v-app>
+  <vue100vh>
+    <v-app id="day-planner">
+      <vue100vh
+        :css="{ display: 'flex', flexDirection: 'column', height: '100rvh' }"
+      >
+        <router-view />
+        <footer-component />
+      </vue100vh>
+    </v-app>
+  </vue100vh>
 </template>
 
 <script>
