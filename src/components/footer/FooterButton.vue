@@ -11,7 +11,8 @@
 </template>
 
 <script>
-import ICON from "@/constants";
+import ICON from "@/common/constants/icon";
+import COLOR from "@/common/constants/color";
 
 export default {
   name: "FooterButton",
@@ -27,8 +28,8 @@ export default {
       return ICON[this.iconName.toUpperCase()];
     },
     iconColor() {
-      if (this.isMounted) return ICON.ACTIVE;
-      else return ICON.INACTIVE;
+      if (this.isMounted) return COLOR.ACTIVE;
+      else return COLOR.INACTIVE;
     }
   },
   methods: {
