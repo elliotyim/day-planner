@@ -22,7 +22,6 @@ body {
 
 .module {
   height: 100%;
-  /* height: calc(var(--vh, 1vh) * 100); */
   margin: 0 auto;
   max-width: 30%;
 }
