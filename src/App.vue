@@ -4,8 +4,8 @@
       <vue100vh
         :css="{ display: 'flex', flexDirection: 'column', height: '100rvh' }"
       >
-        <router-view />
-        <footer-component />
+        <RouterView />
+        <FooterComponent />
       </vue100vh>
     </v-app>
   </vue100vh>

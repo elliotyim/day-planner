@@ -2,9 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import DebugView from "@/views/DebugView";
 import LandingView from "@/views/LandingView";
-import DashboardView from "@/views/main/DashboardView";
+import MypageView from "@/views/main/MypageView";
 import CalendarView from "@/views/main/CalendarView";
-import CommunityView from "@/views/main/CommunityView";
+import TodoView from "@/views/main/TodoView";
 import SettingsView from "@/views/main/SettingsView";
 import SigninView from "@/views/auth/SigninView";
 import SignupView from "@/views/auth/SignupView";
@@ -15,7 +15,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/d",
+    path: "/debug/",
     name: "DebugView",
     component: DebugView
   },
@@ -25,9 +25,9 @@ const routes = [
     component: LandingView
   },
   {
-    path: "/dashboard/",
-    name: "DashboardView",
-    component: DashboardView
+    path: "/mypage/",
+    name: "MypageView",
+    component: MypageView
   },
   {
     path: "/calendar/",
@@ -35,9 +35,9 @@ const routes = [
     component: CalendarView
   },
   {
-    path: "/community/",
-    name: "CommunityView",
-    component: CommunityView
+    path: "/todo/",
+    name: "TodoView",
+    component: TodoView
   },
   {
     path: "/settings/",
