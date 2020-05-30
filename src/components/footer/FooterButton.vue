@@ -1,15 +1,18 @@
 <template>
   <v-col class="d-flex justify-center pa-0">
-    <div
+    <v-icon
       id="footer-button"
-      :style="{ backgroundImage: iconUrl }"
-      role="button"
       @click="showPage"
-    />
+      :color="iconColor"
+      role="button"
+      >{{ icon }}</v-icon
+    >
   </v-col>
 </template>
 
 <script>
+import ICON from "@/constants";
+
 export default {
   name: "FooterButton",
   props: {
@@ -17,14 +20,15 @@ export default {
     iconName: String
   },
   computed: {
-    iconUrl() {
-      if (this.isMounted)
-        return `url(${require(`@/assets/icon/${this.iconName}-selected.svg`)})`;
-      else
-        return `url(${require(`@/assets/icon/${this.iconName}-unselected.svg`)})`;
-    },
     isMounted() {
       return this.$route.path.startsWith(this.path);
+    },
+    icon() {
+      return ICON[this.iconName.toUpperCase()];
+    },
+    iconColor() {
+      if (this.isMounted) return ICON.ACTIVE;
+      else return ICON.INACTIVE;
     }
   },
   methods: {
@@ -37,8 +41,8 @@ export default {
 
 <style scoped>
 #footer-button {
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   background-position: center;
 }
 </style>
