@@ -13,6 +13,7 @@
 
 <script>
 import vue100vh from "vue-100vh";
+import touchEvent from "@/common/functions/touch-event";
 import FooterComponent from "@/components/footer/FooterComponent";
 
 export default {
@@ -22,7 +23,8 @@ export default {
     FooterComponent
   },
   mounted() {
-    document.documentElement.style.overflow = "hidden";
+    touchEvent.preventScroll();
+    touchEvent.preventZoomIn();
   }
 };
 </script>
