@@ -5,8 +5,8 @@
       :color="iconColor"
       @click="mark"
       role="button"
-      >{{ icon }}</v-icon
-    >
+      >{{ icon }}
+    </v-icon>
   </v-col>
 </template>
 

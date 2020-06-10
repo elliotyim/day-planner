@@ -3,7 +3,7 @@
     <CardTitle title="Calendar" options="text-center pt-3" />
     <v-row>
       <v-col>
-        <vc-calendar is-expanded :attributes="attrs" />
+        <vc-calendar is-expanded :first-day-of-week="1" :attributes="dates" />
       </v-col>
     </v-row>
     <v-row>
@@ -33,16 +33,12 @@ export default {
   },
   data() {
     return {
-      today: {
-        key: "today",
-        highlight: "gray",
-        dates: new Date()
-      }
+      today: { highlight: "gray", dates: new Date() }
     };
   },
   computed: {
     ...mapGetters(["getDates", "getMarks"]),
-    attrs() {
+    dates() {
       return [this.today, ...this.getDates];
     },
     marks() {
