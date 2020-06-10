@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import plans from "./plans";
+import calendar from "./calendar";
 
 Vue.use(Vuex);
 
@@ -8,5 +8,5 @@ export default new Vuex.Store({
   state: {},
   mutations: {},
   actions: {},
-  modules: { plans: plans }
+  modules: { calendar }
 });
