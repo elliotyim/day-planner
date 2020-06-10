@@ -7,11 +7,12 @@
       </v-col>
     </v-row>
     <v-row>
-      <CalendarMark
+      <CalendarMarker
         v-for="mark in marks"
         :key="mark.label"
-        :iconName="mark.iconName"
+        :markerIcon="mark.icon"
         :label="mark.label"
+        :color="mark.color"
       />
     </v-row>
   </CardBackground>
@@ -20,7 +21,7 @@
 <script>
 import CardBackground from "@/components/card/CardBackground";
 import CardTitle from "@/components/card/CardTitle";
-import CalendarMark from "@/components/calendar/CalendarMark";
+import CalendarMarker from "@/components/calendar/CalendarMarker";
 import { mapGetters } from "vuex";
 
 export default {
@@ -28,7 +29,7 @@ export default {
   components: {
     CardBackground,
     CardTitle,
-    CalendarMark
+    CalendarMarker
   },
   data() {
     return {
@@ -39,17 +40,17 @@ export default {
       }
     };
   },
-  created() {
-    this.$store.dispatch("refreshDates");
-  },
   computed: {
-    ...mapGetters(["getMarks", "getDates"]),
+    ...mapGetters(["getDates", "getMarks"]),
     attrs() {
       return [this.today, ...this.getDates];
     },
     marks() {
       return this.getMarks;
     }
+  },
+  created() {
+    this.$store.dispatch("fetchDates");
   }
 };
 </script>
