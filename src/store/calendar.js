@@ -8,27 +8,27 @@ export default {
       {
         color: 0,
         icon: "circle",
-        label: "coding"
+        label: "Coding"
       },
       {
         color: 1,
         icon: "check",
-        label: "workout"
+        label: "Workout"
       },
       {
         color: 2,
         icon: "star",
-        label: "reading books"
+        label: "Reading Books"
       },
       {
         color: 3,
         icon: "square",
-        label: "math"
+        label: "Math"
       },
       {
         color: 4,
         icon: "cross",
-        label: "homework"
+        label: "Homework"
       }
     ]
   }),

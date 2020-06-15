@@ -27,31 +27,21 @@ export default {
       return ICON[this.markerIcon.toUpperCase()];
     },
     iconColor() {
-      let result = this.getDates.filter(
+      let todayMark = this.getDates.filter(
         d =>
           d.dates.getDate() === new Date().getDate() &&
-          d.popover.label === this.capitalize(this.label)
+          d.popover.label === this.label
       );
-      return result.length > 0 ? result[0].dot.color : "";
+      return todayMark.length > 0 ? todayMark[0].dot.color : "";
     }
   },
   methods: {
     ...mapActions(["fetchDates", "addDate", "removeDate"]),
-    capitalize(string) {
-      return string
-        .trim()
-        .split(" ")
-        .map(str => str.charAt(0).toUpperCase() + str.substring(1))
-        .join(" ");
-    },
     addMark() {
-      this.addDate({
-        color: this.color,
-        label: this.capitalize(this.label)
-      });
+      this.addDate({ color: this.color, label: this.label });
     },
     removeMark() {
-      this.removeDate({ label: this.capitalize(this.label) });
+      this.removeDate({ label: this.label });
     },
     mark() {
       if (this.iconColor) this.removeMark();
