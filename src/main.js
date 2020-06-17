@@ -4,8 +4,10 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import vcalendar from "./plugins/vcalendar";
+import InfiniteLoading from "vue-infinite-loading";
 
 Vue.config.productionTip = false;
+Vue.use(InfiniteLoading);
 
 new Vue({
   router,
