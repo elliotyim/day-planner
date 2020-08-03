@@ -7,6 +7,7 @@ const CROSS = "fas fa-times";
 const CHECK = "fas fa-check";
 const SQUARE = "far fa-square";
 const STAR = "far fa-star";
+const CHECK_CIRCLE = "far fa-check-circle";
 
 export default {
   MYPAGE: MYPAGE,
@@ -17,5 +18,6 @@ export default {
   CROSS: CROSS,
   SQUARE: SQUARE,
   CHECK: CHECK,
-  STAR: STAR
+  STAR: STAR,
+  CHECK_CIRCLE: CHECK_CIRCLE
 };
